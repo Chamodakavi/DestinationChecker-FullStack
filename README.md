@@ -14,6 +14,7 @@ DestinationChecker-FullStack is a web application built with React.js, designed 
 ## 🛠️ Tech Stack
 
 - 🚀 React.js
+- 🚀  Material UI
 
 
 ## 📦 Key Dependencies
