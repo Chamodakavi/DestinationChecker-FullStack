@@ -4,7 +4,7 @@
 
 ## 📝 Description
 
-DestinationChecker-FullStack is a web application built with Express.js, designed to help users discover and explore travel destinations. Leveraging a robust backend powered by Express.js, this application offers a seamless experience for planning your next adventure. Key features include an intuitive interface for searching destinations, detailed information on points of interest, and tools for creating personalized travel itineraries. Whether you're planning a weekend getaway or a long-term journey, DestinationChecker-FullStack provides the resources you need to make informed decisions and create unforgettable travel experiences.
+DestinationChecker-FullStack is a web application built with React.js, designed to help users discover and explore travel destinations. Leveraging a robust backend powered by Express.js, this application offers a seamless experience for planning your next adventure. Key features include an intuitive interface for searching destinations, detailed information on points of interest, and tools for creating personalized travel itineraries. Whether you're planning a weekend getaway or a long-term journey, DestinationChecker-FullStack provides the resources you need to make informed decisions and create unforgettable travel experiences.
 
 ## ✨ Features
 
@@ -13,7 +13,7 @@ DestinationChecker-FullStack is a web application built with Express.js, designe
 
 ## 🛠️ Tech Stack
 
-- 🚀 Express.js
+- 🚀 React.js
 
 
 ## 📦 Key Dependencies
