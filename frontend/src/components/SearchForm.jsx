@@ -65,10 +65,10 @@ export default function SearchForm() {
         weatherDetails,
       };
       setResult(apiResult);
-
       // POST to database (recording query, silently – not displayed)
       const accessToken = localStorage.getItem("oauthToken");
-      const apiKey = "chamoda-2001-1225-hapuarachchi";
+      const apiKey = process.env.REACT_APP_SERVER_API_KEY;
+
       await fetch("http://localhost:5000/api/records", {
         method: "POST",
         headers: {

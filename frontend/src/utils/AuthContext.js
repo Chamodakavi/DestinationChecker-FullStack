@@ -17,7 +17,9 @@ export function AuthProvider({ children }) {
         picture: decoded.picture,
       });
       setIsLoggedIn(true);
-      console.log("OAuth Token:", credentialResponse.credential);
+      // console.log("OAuth Token:", credentialResponse.credential);
+      localStorage.setItem("oauthToken", credentialResponse.credential);
+      console.log("User logged in:", localStorage.getItem("oauthToken"));
     } catch (err) {
       setUser(null);
       setIsLoggedIn(false);

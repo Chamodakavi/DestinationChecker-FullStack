@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const apiKey = "f1adce962230a4cc8a90a9ed453cd44a";
-const ninjaApiKey = "6eg4BXcBmOVJoXf4WJJxpw==UTcJDUQ2yDy8Yr9b";
+const apiKey = process.env.REACT_APP_OPENWEATHER_API_KEY; // OpenWeather API key
+const ninjaApiKey = process.env.REACT_APP_APININJA_API_KEY; // API Ninja key for geocoding
 
 const AQI_CATEGORIES = [
   {

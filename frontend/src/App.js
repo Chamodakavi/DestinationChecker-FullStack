@@ -4,6 +4,7 @@ import AppBarWithSearch from "./components/AppBarWithSearch";
 import WeatherCard from "./components/WeatherCard";
 import SearchForm from "./components/SearchForm";
 import Poster from "./components/Poster";
+import RecentView from "./components/RecentView";
 
 const BG_IMAGE =
   "url('https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/field_blog_entry_teaser_image/2019-09/couple_bicycles.jpg?itok=ckfvovTg')";
@@ -37,6 +38,9 @@ export default function App() {
     }
   }, []);
 
+  const accessToken = localStorage.getItem("oauthToken");
+  const apiKey = process.env.REACT_APP_SERVER_API_KEY;
+
   const handleSearch = (cityName) => {
     setLocation({ city: cityName, country: "Country" });
     setWeather({ temp: 27, desc: "Partly Cloudy", feels: 29 });
@@ -45,6 +49,7 @@ export default function App() {
   return (
     <Box
       sx={{
+        pb: 5,
         minHeight: "100vh",
         backgroundImage: `${BG_IMAGE}`,
         backgroundSize: "cover",
@@ -85,6 +90,7 @@ export default function App() {
             <Poster />
           </Box>
         </Box>
+        <RecentView accessToken={accessToken} apiKey={apiKey} />
       </Box>
     </Box>
   );

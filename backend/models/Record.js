@@ -1,9 +1,11 @@
 const mongoose = require("mongoose");
 
-const recordSchema = new mongoose.Schema({
-  data: { type: Object, required: true },
-  createdAt: { type: Date, default: Date.now },
-});
+const recordSchema = new mongoose.Schema(
+  {
+    data: { type: Object, required: true },
+  },
+  { timestamps: true }
+); // This adds createdAt and updatedAt automatically
 
 const Record = mongoose.model("Record", recordSchema);
 

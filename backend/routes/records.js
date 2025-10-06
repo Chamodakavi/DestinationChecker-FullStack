@@ -36,5 +36,15 @@ router.get("/", apiKeyAuth, oauth2Auth, async (req, res) => {
     res.status(500).json({ error: "Internal server error" });
   }
 });
+router.get("/recent-destinations", apiKeyAuth, oauth2Auth, async (req, res) => {
+  try {
+    // Find latest 5 records, sorted descending by creation time
+    const recentRecords = await Record.find().sort({ createdAt: -1 }).limit(5);
+    res.json(recentRecords);
+  } catch (err) {
+    console.error("Error fetching recent destinations:", err);
+    res.status(500).json({ error: "Internal server error" });
+  }
+});
 
 module.exports = router;
