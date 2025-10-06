@@ -110,8 +110,7 @@ mongoose: ^8.19.0
         Start the frontend:
     
         npm start
-    
-Visit http://localhost:3000 in your browser to use the app.
+    Visit http://localhost:3000 in your browser to use the app.
 
 APIs
 
