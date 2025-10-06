@@ -70,8 +70,8 @@ mongoose: ^8.19.0
             └── OpenWeatherAPI.js
 ```
 
-##⚙️ Configuration & Setup
-    1. Clone the Project
+## ⚙️Configuration & Setup
+-1. Clone the Project
     ```
         git clone https://github.com/yourusername/DestinationChecker-FullStack.git
         cd DestinationChecker-FullStack
