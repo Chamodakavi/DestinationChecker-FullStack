@@ -118,3 +118,6 @@ APIs
     AirQuality - https://openweathermap.org/api/air-pollution
     GeoCoordinates - https://api-ninjas.com/api/geocoding
     Population - https://restcountries.com/
+![image alt](https://github.com/Chamodakavi/DestinationChecker-FullStack/blob/249cfb9cd34a0d82afe4aa23068b0e53c0b037a1/Screenshot%202025-10-06%20162643.png)
+![image alt](https://github.com/Chamodakavi/DestinationChecker-FullStack/blob/249cfb9cd34a0d82afe4aa23068b0e53c0b037a1/Screenshot%202025-10-06%20162727.png)
+![image alt](https://github.com/Chamodakavi/DestinationChecker-FullStack/blob/249cfb9cd34a0d82afe4aa23068b0e53c0b037a1/Screenshot%202025-10-06%20162706.png)
