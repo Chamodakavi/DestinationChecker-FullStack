@@ -113,3 +113,9 @@ mongoose: ^8.19.0
     
 Visit http://localhost:3000 in your browser to use the app.
 
+APIs
+
+    Weather - https://openweathermap.org/api
+    AirQuality - https://openweathermap.org/api/air-pollution
+    GeoCoordinates - https://api-ninjas.com/api/geocoding
+    Population - https://restcountries.com/
