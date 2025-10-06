@@ -71,9 +71,45 @@ mongoose: ^8.19.0
 ```
 
 ## ⚙️Configuration & Setup
--1. Clone the Project
-    ```
-        git clone https://github.com/yourusername/DestinationChecker-FullStack.git
+    1. Clone the Project
+    
+        git clone https://github.com/Chamodakavi/DestinationChecker-FullStack
         cd DestinationChecker-FullStack
-    ```
+    
+    2. Backend Setup
+        Navigate to the backend directory:
+        
+        cd backend
+        npm install
+    
+    Create a .env file in the backend/ folder with the following content:
+    
+        PORT=5000
+        MONGODB_URI=your_mongodb_connection_string
+        GOOGLE_CLIENT_ID=your_google_oauth_client_id
+        API_KEY=your_custom_api_key
+        OPENWEATHER_API_KEY=your_openweather_api_key
+        APININJA_API_KEY=your_apininja_api_key
+    
+        Start the backend server:
+        npm start
+    
+    3. Frontend Setup
+        Navigate to the frontend directory:
+    
+        cd ../frontend
+        npm install
+    
+        Create a .env file in the frontend/ folder with values for any public API keys you need (use the REACT_APP_ prefix):
+    
+        REACT_APP_SERVER_API_KEY=your_custom_api_key
+        REACT_APP_GOOGLE_CLIENT_ID=your_google_oauth_client_id
+        REACT_APP_OPENWEATHER_API_KEY=your_openweather_api_key
+        # Add others as appropriate
+        
+        Start the frontend:
+    
+        npm start
+    
+Visit http://localhost:3000 in your browser to use the app.
 
