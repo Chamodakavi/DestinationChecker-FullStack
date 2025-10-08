@@ -69,7 +69,7 @@ export default function SearchForm() {
       const accessToken = localStorage.getItem("oauthToken");
       const apiKey = process.env.REACT_APP_SERVER_API_KEY;
 
-      const RECENT_ENDPOINT = `${import.meta.env.REACT_APP_BACKEND_URL}`;
+      const RECENT_ENDPOINT = `${process.env.REACT_APP_BACKEND_URL}`;
 
       await fetch(`${RECENT_ENDPOINT}/api/records`, {
         method: "POST",

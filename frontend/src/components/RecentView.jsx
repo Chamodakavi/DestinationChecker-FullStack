@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Card, CardContent, Typography, Grid, Box } from "@mui/material";
 
-const RECENT_ENDPOINT = `${
-  import.meta.env.REACT_APP_BACKEND_URL
-}/api/records/recent-destinations`;
+const RECENT_ENDPOINT = `${process.env.REACT_APP_BACKEND_URL}/api/records/recent-destinations`;
 
 export default function RecentView({ accessToken, apiKey }) {
   const [recent, setRecent] = useState([]);
