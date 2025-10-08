@@ -8,20 +8,8 @@ const recordsRoutes = require("./routes/records");
 const app = express();
 const port = process.env.PORT || 5000;
 
-const allowedOrigins = [
-  "http://localhost:3000",
-  "https://destination-checker-full-stack-x22i-ayyxtbfl8.vercel.app",
-  "https://destination-checker-full-stack-x22i-qus3awtaa.vercel.app",
-];
-
 const corsOptions = {
-  origin: function (origin, callback) {
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error("Not allowed by CORS"));
-    }
-  },
+  origin: "*", // Allows all origins
   allowedHeaders: ["Content-Type", "Authorization", "x-api-key"],
 };
 
