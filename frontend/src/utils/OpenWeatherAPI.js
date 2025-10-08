@@ -86,7 +86,7 @@ export async function getAirQuality(city) {
     const coords = await getCityCoordinates(city);
     const { latitude, longitude } = coords;
 
-    const BASE_URL = "http://api.openweathermap.org/data/2.5/air_pollution";
+    const BASE_URL = "https://api.openweathermap.org/data/2.5/air_pollution";
     const url = `${BASE_URL}?lat=${latitude}&lon=${longitude}&appid=${apiKey}`;
 
     const response = await axios.get(url);
