@@ -8,8 +8,13 @@ const recordsRoutes = require("./routes/records");
 const app = express();
 const port = process.env.PORT || 5000;
 
+const corsOptions = {
+  origin: "*", // or specify your frontend origin(s) instead of '*'
+  allowedHeaders: ["Content-Type", "Authorization", "x-api-key"], // Add 'x-api-key' here
+};
+
 // Middleware
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 
 // Connect to MongoDB
